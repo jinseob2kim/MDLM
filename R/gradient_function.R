@@ -7,9 +7,9 @@ IniBetaMake=function(ybar,xbar,data){
 
 
 
-#' FUNCTION_TITLE
 #' Square sum for CostFun
-#' FUNCTION_DESCRIPTION
+#'
+#' Square sum for CostFun
 #'
 #' @param bs Intial beta
 #' @param ybar Dependent variable.
@@ -40,10 +40,10 @@ SqrtFun=function(bs=b.start, ybar="y",xbar,data,rmat=r){
 
 
 
-#' FUNCTION_TITLE
 #' Cost function for MDLM
-#' FUNCTION_DESCRIPTION
+#'
 #' Least square estimation for MDLM
+#'
 #' @param bs Intial beta
 #' @param ybar Dependent variable.
 #' @param xbar Independent variable.
@@ -65,9 +65,9 @@ CostFun= function(bs=b.start, ybar="y",xbar,data,rmat=r){
 
 
 
-#' FUNCTION_TITLE
 #' Convert lower triangle to Correlation matrix
-#' FUNCTION_DESCRIPTION
+#'
+#' Convert lower triangle to Correlation matrix
 #'
 #' @param lower Lower triangle. The length is must be x(x-1)/2 form
 #'

@@ -34,7 +34,9 @@ summary.optim <- function ( optim.fit, N=100 ){
 }
 ###################################################################################################
 
-library(numDeriv)
+
+#library(numDeriv)
+#' @import numDeriv
 summary.optim2 <- function ( optim.fit,f, N=100 ){
 
   Estimate = optim.fit$par

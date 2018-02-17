@@ -8,3 +8,7 @@ Description: R package for MDLM
 License: Jinseob Kim
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
+Imports: numDeriv (>= 2016.8-1)
+Depends:
+    numDeriv (>= 2016.8-1)
