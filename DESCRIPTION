@@ -3,12 +3,11 @@ Type: Package
 Title: Multi Dimensional Linear Model(MDLM)
 Version: 0.1.0
 Author: Jinseob Kim
-Maintainer: <jinseob2kim@gmail.com>
+Maintainer: Jinseob Kim <jinseob2kim@gmail.com>
 Description: R package for MDLM
-License: Jinseob Kim
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-Imports: numDeriv (>= 2016.8-1)
-Depends:
-    numDeriv (>= 2016.8-1)
+Imports: numDeriv (>= 2016.8-1), optimx
+URL: https://github.com/jinseob2kim/MDLM

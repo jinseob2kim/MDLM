@@ -1,5 +1,3 @@
-
-
 #' Generate initial beta
 #'
 #' Get initial beta from conventional linear model
@@ -11,6 +9,7 @@
 #' @return Initial beta
 #' @examples
 #' # ADD_EXAMPLES_HERE
+#' @importFrom stats lm coef as.formula
 IniBetaMake=function(ybar,xbar,data){
   coef.list= coef(lm(as.formula(paste(ybar,"~",paste(xbar,collapse="+"))),data=data))
   p=length(xbar)
@@ -86,6 +85,7 @@ CostFun= function(bs=b.start, ybar="y",xbar,data,rmat=r){
 #' @return Matrix
 #' @examples
 #' # ADD_EXAMPLES_HERE
+#' @export
 LowerToMatrix=function(lower=c(4,7,8)){
   n=(1+sqrt(1+8*length(lower)))/2
   dmat=diag(n)
