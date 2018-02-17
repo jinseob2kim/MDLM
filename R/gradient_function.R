@@ -1,4 +1,16 @@
 
+
+#' Generate initial beta
+#'
+#' Get initial beta from conventional linear model
+#'
+#' @param ybar Dependent variable.
+#' @param xbar Independent variable.
+#' @param data Data.
+#'
+#' @return Initial beta
+#' @examples
+#' # ADD_EXAMPLES_HERE
 IniBetaMake=function(ybar,xbar,data){
   coef.list= coef(lm(as.formula(paste(ybar,"~",paste(xbar,collapse="+"))),data=data))
   p=length(xbar)
