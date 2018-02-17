@@ -1,3 +1,8 @@
+#' This is data to be included in MDLM
+#'
+#' @author Jinseob Kim \email{jinseob2kim@gmail.com}
+#' @references \url{https://github.com/jinseob2kim/MDLM}
+"exMDLM"
 
 
 mdlm1=function(ybar, xbar, data, cor.mat=NULL, ini.beta=NULL){
@@ -17,8 +22,8 @@ mdlm1=function(ybar, xbar, data, cor.mat=NULL, ini.beta=NULL){
 
 
 
-#a=read.csv("/home/secondmath/Dropbox/Survival_new/exdata2.csv")
-#save(a, file="data/exMDLM.rda")
+#exMDLM=read.csv("/home/secondmath/Dropbox/Survival_new/exdata2.csv")
+#save(exMDLM, file="data/exMDLM.rda")
 #dd=data(exMDLM)
 #mdlm1(ybar="y",xbar=c("x1","x2"),data=a)
 
