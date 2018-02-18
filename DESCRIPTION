@@ -11,3 +11,6 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: numDeriv (>= 2016.8-1), optimx
 URL: https://github.com/jinseob2kim/MDLM
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
