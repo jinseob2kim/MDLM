@@ -84,7 +84,7 @@ mdlm2=function(ybar, xbar, data, ini.cor=0, ini.beta=NULL){
   ini.g = ini.cor.mat[lower.tri(ini.cor.mat)]
   ui=cbind(matrix(rep(0,4*length(xbar)),nrow=2),matrix(rep(c(1,-1),length(ini.g)),nrow=2))
   ci=c(-1,-1)
-  f=function(x){CostFun(bs=x[1:length(ini.beta)],  "y",xbar=c("x1","x2") ,exMDLM,LowerToMatrix(x[-(1:length(ini.beta))]))}
+  f=function(x){CostFun(bs=x[1:length(ini.beta)],  "y",xbar=c("x1","x2") ,data,LowerToMatrix(x[-(1:length(ini.beta))]))}
 
   res.optim= constrOptim(c(ini.beta,ini.g),f, NULL,ui=ui,ci=ci)
   #f= function(x){CostFun(bs=x, "y",xbar=c("x1","x2"),data,cor.mat)}
@@ -99,6 +99,6 @@ mdlm2=function(ybar, xbar, data, ini.cor=0, ini.beta=NULL){
   return(list(summary=summ, rmse=sqrt(1/nrow(data)*res.optim$value)))
 }
 
-#mdlm2(ybar="y",xbar=c("x1","x2"),data=exMDLM, ini.cor=0,ini.beta=c(0,0,0,0))
+#mdlm2(ybar="y",xbar=c("x1","x2","int"),data=exMDLM, ini.cor=0,ini.beta=c(0,0,0,0,0,0))
 
 
