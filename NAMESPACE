@@ -2,6 +2,7 @@
 
 export(LowerToMatrix)
 export(mdlm1)
+export(mdlm2)
 import(numDeriv)
 importFrom(optimx,optimx)
 importFrom(stats,as.formula)
