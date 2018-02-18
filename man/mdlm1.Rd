@@ -24,5 +24,5 @@ beta, standard error, z value, p value, rmse
 MDLM of fixed vector space
 }
 \examples{
-# ADD_EXAMPLES_HERE
+mdlm1(ybar="y",xbar=c("x1","x2"),data=exMDLM, cor.mat=NULL, ini.beta=NULL)
 }

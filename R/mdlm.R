@@ -18,7 +18,7 @@
 #'
 #' @return beta, standard error, z value, p value, rmse
 #' @examples
-#' # ADD_EXAMPLES_HERE
+#' mdlm1(ybar="y",xbar=c("x1","x2"),data=exMDLM, cor.mat=NULL, ini.beta=NULL)
 #' @importFrom stats optim constrOptim complete.cases
 #' @export
 mdlm1=function(ybar, xbar, data, cor.mat=NULL, ini.beta=NULL){
@@ -70,7 +70,7 @@ mdlm1=function(ybar, xbar, data, cor.mat=NULL, ini.beta=NULL){
 #'
 #' @return beta, g_ij, standard error, z value, p value, rmse
 #' @examples
-#' # ADD_EXAMPLES_HERE
+#' mdlm2(ybar="y",xbar=c("x1","x2"),data=exMDLM, ini.cor=0,ini.beta=c(0,0,0,0))
 #' @importFrom stats constrOptim
 #' @export
 mdlm2=function(ybar, xbar, data, ini.cor=0, ini.beta=NULL){
@@ -99,6 +99,5 @@ mdlm2=function(ybar, xbar, data, ini.cor=0, ini.beta=NULL){
   return(list(summary=summ, rmse=sqrt(1/nrow(data)*res.optim$value)))
 }
 
-#mdlm2(ybar="y",xbar=c("x1","x2","int"),data=exMDLM, ini.cor=0,ini.beta=c(0,0,0,0,0,0))
 
 

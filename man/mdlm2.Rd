@@ -24,5 +24,5 @@ beta, g_ij, standard error, z value, p value, rmse
 Also estimate g_ij
 }
 \examples{
-# ADD_EXAMPLES_HERE
+mdlm2(ybar="y",xbar=c("x1","x2"),data=exMDLM, ini.cor=0,ini.beta=c(0,0,0,0))
 }

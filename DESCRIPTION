@@ -4,7 +4,7 @@ Title: Multi Dimensional Linear Model(MDLM)
 Version: 0.1.0
 Author: Jinseob Kim
 Maintainer: Jinseob Kim <jinseob2kim@gmail.com>
-Description: R package for MDLM
+Description: R package for MDLM.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
