@@ -1,5 +1,5 @@
 # MDLM
-
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/MDLM)](https://cran.r-project.org/package=MDLM)
 [![GitHub issues](https://img.shields.io/github/issues/jinseob2kim/MDLM.svg)](https://github.com/jinseob2kim/MDLM/issues)
 [![GitHub forks](https://img.shields.io/github/forks/jinseob2kim/MDLM.svg)](https://github.com/jinseob2kim/MDLM/network)
 [![GitHub stars](https://img.shields.io/github/stars/jinseob2kim/MDLM.svg)](https://github.com/jinseob2kim/MDLM/stargazers)
