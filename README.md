@@ -7,6 +7,7 @@
 
 Multi-Dimensional Linear Model
 
+선형모형의 휘어진 다차원 공간으로의 확장: https://blog.zarathu.com/posts/2018-11-08-mdlm/
 
 # Install 
 ```r
